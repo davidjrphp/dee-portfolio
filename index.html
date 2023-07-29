@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>David Mwelwa's Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+    <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+
+#services .services-row .seric-div .service-card {
+    background-color: #fff;
+    padding: 40px 20px;
+    box-shadow: 5 5 20px rgba(5, 5, 5, 0.1);
+    border-radius: 10px; /* Add border radius */
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#services .services-row .seric-div .service-card:hover {
+    box-shadow: 10 10 30px rgba(10, 10, 10, 0.2);
+    transform: translateY(-5px);
+}
+
+#services .services-row .seric-div .service-card i {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#services .services-row .seric-div .service-card h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#services .services-row .seric-div .service-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* ... (responsive styles) ... */
+}
+
+
+/* Style for the .hero-subtitle paragraph */
+.hero-subtitle {
+  font-size: 18px;
+  color: #a47a28a9; /* You can change the color to your preference */
+  margin-top: 15px;
+}
+
+/* Style for the .typed span inside the .hero-subtitle paragraph */
+.typed {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #555; /* You can change the color to your preference */
+  animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking caret animation keyframes */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #555; /* You can change the color to your preference */
+  }
+}
+
+/* Style for the <i> element */
+a i {
+  font-style: italic;
+  font-size: 14px;
+  color: #777; /* You can change the color to your preference */
+  margin-top: 10px;
+}
+
+
+/* Contact Section Styles */
+#contact {
+    position: relative;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+#contact .overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url(assets/images/background.png);
+    background-color: transparent;
+    z-index: -1;
+}
+
+#contact h5.title-left {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#contact .socil-icon ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#contact .socil-icon li {
+    margin: 0 15px;
+}
+
+#contact .socil-icon li a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+#contact .socil-icon li a:hover {
+    color: #ccc;
+}
+
+#contact .socil-icon .ico-circle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    text-align: center;
+}
+
+#contact .socil-icon .ico-circle i {
+    line-height: 50px;
+}
+
+#contact .socil-icon .fas.fa-envelope {
+    margin-right: 5px;
+}
+
+#contact .socil-icon .fas.fa-phone {
+    margin-right: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #contact h5.title-left {
+        font-size: 20px;
+    }
+    
+    #contact .socil-icon ul {
+        flex-wrap: wrap;
+    }
+    
+    #contact .socil-icon li {
+        margin: 10px 15px;
+    }
+}
+/* Footer Styles */
+.footer {
+    background-color: #000; /* Set the background color to dark gray (#333) */
+    color: #fff; /* Set the text color to white */
+    padding: 20px 0; /* Add some padding on the top and bottom */
+}
+
+.footer-row {
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Links in the footer */
+.footer a {
+    color: #fff; /* Set link text color to white */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add some spacing between links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Resume Section */
+#section-resume {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.resume-item {
+    position: relative;
+    padding-left: 40px;
+}
+
+.resume-item .date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.resume-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.resume-item p {
+    margin-bottom: 20px;
+}
+
+.resume-item .school {
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Section Heading */
+.section-heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    .resume-item .date {
+        position: relative;
+    }
+}
+
+
+</style>
+    <!-- <link rel="stylesheet" href="css/style2.css"> -->
+</head>
+
+    <body>
+       <!--########################### Header Starts Here ###################### -->
+        <div class="home-screen container-fluid">
+          <div class="home-cover">
+                <div id="menu-jk" class="header">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-md-3 logo">
+                               <img class="logo-wt" src="" alt="">
+                               <img class="logo-gry" src="" alt="">
+                               
+                               <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                           </div>
+                           <div id="menu" class="col-md-9 d-none d-md-block">
+                               <ul>
+                                   <li><a href="#">Home</a></li>
+                                   <li><a href="#about">About Me</a></li>
+                                   <li><a href="#services">Experience</a></li>
+                                   <li><a href="#skills">Skills</a></li>
+                                   <li><a href="#contact">Contact Details</a></li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                <div class="container">
+                   <div class="row home-detail">
+                      <div class="col-md-5 animated bounceInLeft hom-img">
+                          <img src="assets/images/pic1.jpg" alt="">
+                      </div>
+                      <div class="col-md-7 animated bounceInRight homexp">
+                           <h5>Hello, I'm</h5>
+                           <h2>David Mwelwa</h2>
+                           <p class="hero-subtitle"><span class="typed" data-typed-items="Junior Web Developer, LAN Network Technician, Windows Server System Admin"></span></p>
+                           <!-- <span>Junior <a >Web Developer</a> </span> -->
+                           <p><i>"Coding is 1% Inspipration and 99% Perspiration"</i></p>
+                           
+                           <ul class="socil-icon">
+                                <li>
+                                    <a href="#"><i class="icon-circle fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-circle fab fa-instagram"></i></a> 
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-circle fab fa-whatsapp"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-circle fas fa-envelope"></i></a> 
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-circle fas fa-phone"></i></a>
+                                </li>
+                                
+                           </ul>
+                       </div>
+                   </div>
+
+                </div>
+          </div>
+        </div>
+        
+        <!--########################### About US Starts Here ###################### -->
+        
+        <div id="about" class="about-us container-fluid">
+           <div class="container">
+               <div class="session-title row">
+                    <h2>About Me</h2>
+                    <p><i>"Coding is 1% Inspipration and 99% Perspiration"</i></p>
+                    <div class="heading-line"></div>
+                </div>
+                <div class="about-row row">
+                   <div class="image-col col-md-4">
+                       <img src="assets/images/pic3.jpg" alt="">
+                      <a href="https://drive.google.com/file/d/1FtR-Y4x3X0GFt8dpRXlyGtR4A4Cu0aiX/view?usp=sharing">
+                        <button class="btn btn-primary"><i class="fas fa-download"></i> Download CV</button>
+                      </a>
+                      
+                   </div>
+                   <div class="detail-col col-md-8">
+                       <h2>David Mwelwa</h2>
+                        <h6>Junior Web Developer</h6>
+                        <p>I'm a passionate and dedicated junior web developer who strives to adavnce my Web development skills to a higher professional level.I do both front end and back end web development using HTML5, CSS, JavaScript, Bootstrap, PHP and MySql. Additionally, I also have experience in LAN Network installation and configuration </p>
+                        <hr>
+                          <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="info-list">
+                                    <ul>
+                                        <li><span>Country:</span>Zambia</li>
+                                        <li><span>Address:</span>Lusaka</li>
+                                        <li><span>University:</span>DMI-St. Eugene</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="info-list">
+                                    <ul>
+                                        <li><span>Degree:</span>Bachelors</li>
+                                        <li><span>Status:</span>In Progree</li>
+                                        <li><span>Expected Graduation Year:</span>2024</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                   </div>
+                    
+                    
+                  
+                </div>
+           </div>   
+        <br><br>
+        <hr>
+        <section class="site-section " id="section-education">
+            <div class="container">
+                <div class="about-row row">
+                    <div class="image-col col-md-4">
+                            <img src="assets/images/dmi.jpg" alt="" style="width: 120px; height: 140px;">
+                    </div>  
+                    <div class="detail-col col-md-8">
+                         <h2>Education</h2>
+                         <span class="school"><i class="fas fa-school"></i>DMI-St. University</span>
+                         <h5>Bachelor of Science in Computer Science</h4>
+                         <span class="date"><span class="icon-calendar"></span> June 2020 - Present</span><br>
+                         <span>Expected to graduate in 2024 </span>
+                         
+                     </div>
+                     
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+    
+                        <h2 class="mb-5" style="text-align: center">Experience</h2>
+    
+                        <div class="resume-item mb-4">
+                            <span class="date"><span class="icon-calendar"></span></span>
+                            <h6>To view my open source projects</h6>
+                            <p>click the Github link below:</p>
+                            <a href="#"><button class="btn btn-primary"><span>Github</span></button></a>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </section> <!-- .section -->
+    </div>
+        <hr>
+        
+           <!--########################### Services Starts Here ###################### -->
+          <div id="services"  class="services container-fluid">
+           <div class="container">
+               <div class="session-title row">
+                    <h2>Here's what I can do</h2>
+                    <!-- <p>There are many variations of passages of Lorem Ipsum available Lorem Ipsum available but the majority</p> -->
+                    <div class="heading-line"></div>
+                </div>
+                <div class="services-row row">
+                    <div class="col-md-4 seric-div">
+                        <div class="service-card">
+                            <i class="fab fa-html5"></i>
+                            <h4>frontend/Design</h4>
+                            <p>Bootstrap libraries, HTML, CSS, and JavaScript for interactive, responsive, and intuitive User interfaces.</p>
+                        </div>
+                    </div>                    
+                    <div class="col-md-4 seric-div">
+                        <div class="service-card">
+                           <i class="fas fa-desktop"></i>
+                            <h4>backend development</h4>
+                            <p>Uses core PHP/MySql for server-side development, it's safe and secure</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 seric-div">
+                        <div class="service-card">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>LAN Networking</h4>
+                            <p>Experience in Installation, configuration, and management of LAN Networks</p>
+                        </div>
+                    </div>
+                    
+                </div>
+              </div>
+        </div>
+               
+        <!--########################### Skills Starts Here ###################### -->
+         
+        <div id="skills" class="skills container-fluid">
+            <div class="row">
+                <div class="col-md-12 skii-div tech-skill">
+                    <div class="title">
+                        <h2>My Skills</h2>
+                        <!-- <p></p> -->
+                    </div>
+                    
+                    <ul>
+                        <li>
+                            <label for="">UI Design</label>
+                                <div class="progress">
+                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                        </li>
+                         <li>
+                            <label for="">JavaScript</label>
+                                <div class="progress">
+                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                </div>
+                        </li>
+                         <li>
+                            <label for="">HTML5</label>
+                                <div class="progress">
+                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                                </div>
+                        </li>
+                         <li>
+                            <label for="">PHP / MYSQL</label>
+                                <div class="progress">
+                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                </div>
+                        </li>
+                         
+                    </ul>
+                </div>
+            </div>
+        </div>   
+        <!--  ************************* Footer  Starts Here ************************** -->
+    <footer class="container-fluid footer" id="contact">
+        <div class="container">
+            <div class="row footerro">
+                <!-- <span class="tt">iPhone</span> -->
+                <p> 
+                    <span><a href="">HOME</a></span>
+                    <span><a href="">ABOUT</a></span>
+                    <span><a href="">EXPERIENCE</a></span>
+                    <span><a href="">SKILLS</a></span>
+                    <span><a href="">CONTACT</a></span>
+                 </p>
+                 <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                        Please get in touch anytime
+                    </h5>
+                </div>
+                <div class="socil-icon d-flex flex-column">
+                    <ul>
+                        <li><a href=""><span><i class="fab fa-facebook"></i></span></a></li>
+                        <li><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+                        <li><a href=""><span><i class="fab fa-whatsapp"></i></span></a></li>
+                        <li><a href="mailto:davidgarciajr955@gmail.com"><span><i class="fas fa-envelope"></i></span></a></li>
+                        <li><a href="tel:0972862797"><span><i class="fas fa-phone"></i></span></a></li>
+                    </ul>
+                </div>
+                <small>Powered by David Mwelwa<small>
+            </div>
+        </div>
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" ></i>
+            </div>
+            
+        </div><!--/.scroll-Top-->
+    </footer>                                                                                                                                          
+    </body>
+     <!-- Your JavaScript code here -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const typedElement = document.querySelector(".typed");
+      const typedItems = typedElement.getAttribute("data-typed-items").split(",");
+      let currentItem = 0;
+      let currentCharacter = 0;
+      let isDeleting = false;
+
+      function type() {
+        const currentText = typedItems[currentItem];
+        if (isDeleting) {
+          typedElement.textContent = currentText.slice(0, currentCharacter);
+          currentCharacter--;
+        } else {
+          typedElement.textContent = currentText.slice(0, currentCharacter);
+          currentCharacter++;
+        }
+
+        if (currentCharacter === currentText.length + 1) {
+          isDeleting = true;
+        }
+
+        if (currentCharacter === -1) {
+          isDeleting = false;
+          currentItem = (currentItem + 1) % typedItems.length;
+        }
+
+        const typingSpeed = isDeleting ? 50 : 150;
+        const delay = isDeleting ? 1000 : 500;
+
+        setTimeout(type, typingSpeed);
+      }
+
+      type();
+    });
+  </script>
+    <!-- <script src="assets/js/jquery-3.2.1.min.js"></script> -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<!-- Bootstrap JS (Popper.js and jQuery are required) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+    <script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="assets/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+</html>
