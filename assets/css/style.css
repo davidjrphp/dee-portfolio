@@ -318,7 +318,7 @@ html {
 
 /* =================== Header Style Starts Here =================== */
 .home-screen {
-  background-image: url(../images/bg.jpg); }
+  background-image: url(); }
   .home-screen .scroll-to-fixed-fixed {
     background-color: #FFF;
     margin-top: -3px !important;
