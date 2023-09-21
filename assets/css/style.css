@@ -341,10 +341,11 @@ html {
   .home-screen .logo .logo-gry {
     display: none; }
   .home-screen .home-cover {
-    background-color: rgba(0, 0, 0, 0.85); }
+    background-color: #2a3645; }
   .home-screen .header {
-    margin-top: 3px;
-    position: absolute;
+    margin-top: 0;
+    position: fixed;
+    background-color: #2a3645;
     width: 100%; }
     .home-screen .header ul {
       float: right; }
@@ -360,7 +361,7 @@ html {
         @media screen and (max-width: 957px) {
           .home-screen .header ul li {
             padding: 25px 10px;
-            font-size: .85rem; } }
+            font-size: 2.85rem; } }
       @media screen and (max-width: 767px) {
         .home-screen .header ul {
           background-color: #fff;
