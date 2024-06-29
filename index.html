@@ -66,7 +66,7 @@
 /* Style for the .hero-subtitle paragraph */
 .hero-subtitle {
   font-size: 18px;
-  color: #a47a28a9; /* You can change the color to your preference */
+  color: #a47a28a9; 
   margin-top: 15px;
 }
 
@@ -75,7 +75,7 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 0.15em solid #555; /* You can change the color to your preference */
+  border-right: 0.15em solid #555; 
   animation: typing 14s steps(40, end), blink-caret 0.5s step-end infinite;
 }
 
@@ -96,7 +96,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: #555; /* You can change the color to your preference */
+    border-color: #555; 
   }
 }
 
@@ -195,24 +195,24 @@ a i {
 }
 /* Footer Styles */
 .footer {
-    background-color: #000; /* Set the background color to dark gray (#333) */
-    color: #fff; /* Set the text color to white */
-    padding: 20px 0; /* Add some padding on the top and bottom */
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px 0; 
 }
 
 .footer-row {
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center; 
 }
 
 /* Links in the footer */
 .footer a {
-    color: #fff; /* Set link text color to white */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 10px; /* Add some spacing between links */
+    color: #fff; 
+    text-decoration: none;
+    margin: 0 10px; 
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline; 
 }
 
 /* Resume Section */
@@ -263,6 +263,19 @@ a i {
         position: relative;
     }
 }
+
+#content {
+    display: block;
+    overflow: hidden;
+    max-height: 150px; 
+}
+
+#view-more {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 </style>
 </head>
     <body>
@@ -291,12 +304,12 @@ a i {
                 <div class="container">
                    <div class="row home-detail">
                       <div class="col-md-5 animated bounceInLeft hom-img">
-                          <img src="assets/images/port.jpg" alt="">
+                          <img src="assets/images/ihm.jpg" alt="">
                       </div>
                       <div class="col-md-7 animated bounceInRight homexp">
                            <h5>Hello, I'm</h5>
                            <span><h2>David <a>Mwelwa</a></h2></span>
-                           <p class="hero-subtitle"><span class="typed" data-typed-items="Junior Web Developer, LAN Network Technician, Windows Server System Admin"></span></p>
+                           <p class="hero-subtitle"><span class="typed" data-typed-items="Junior Web Developer, Database Administrator, Data warehouse officer, LAN Network Technician, Windows Server System Admin"></span></p>
                            <!-- <span>Junior <a >Web Developer</a> </span> -->
                            <p><i>"Coding is 1% Inspipration and 99% Perspiration"</i></p>
                            
@@ -335,15 +348,33 @@ a i {
                 <div class="about-row row">
                    <div class="image-col col-md-4">
                        <img src="assets/images/pic3.jpg" alt="">
-                      <a href="https://drive.google.com/file/d/1_jL0svgkUIuXL0gA3uPRlqMmKWBgoibA/view?usp=sharing">
+                      <a href="https://drive.google.com/file/d/1fT4cxkXUfc6ZRlTOB6K2GkTp0Oa8d7uC/view?usp=sharing">
                         <button class="btn btn-primary"><i class="fas fa-download"></i> Download CV</button>
                       </a>
                       
                    </div>
                    <div class="detail-col col-md-8">
-                       <h2>David Mwelwa</h2>
-                        <span><h6>Junior <a>Web Developer</a></h6></span>
-                        <p>I'm a passionate and dedicated junior web developer who strives to advance my Web development skills to a higher professional level.I do both frontend and backend using HTML5, CSS, JavaScript, jQuery, Bootstrap, PHP and MySql, and Python. Mainly specialized in building Professional Web Applications. Additionally, I also have experience in LAN Network installation and configuration, and Windows System Administration. I have also Dived into Cloud Computing with AWS, and also Data Science</p>
+                    <h2>David Mwelwa</h2>
+                    <span>
+                        <h6>Junior <a>Web Developer</a></h6>
+                    </span>
+                    <p id="content">
+                        I am a dedicated and skilled Junior Web Developer with a Bachelor of Science in Computer Science from DMI St. Eugene University. With a strong foundation in various web development technologies and a diverse range of professional experiences, I am passionate about creating efficient, scalable, and user-friendly web applications.
+                    
+                        My career journey includes notable volunteer and internship roles that have honed my technical and analytical skills. As an Assistant ICT Officer with the Ministry of Health, I supported critical ICT operations, contributing to the smooth functioning of health services. At Innovation Africa Zambia (IA), my role as a Data Associate Intern allowed me to delve into data management and analytics, fostering a robust understanding of data-driven decision-making.
+                        
+                        I further expanded my expertise as an Assistant National Data Warehouse Officer at the Institute for Health Measurements Southern Africa (IHM). In this capacity, I played a key role in data warehouse development and management, executing ETL processes and utilizing SQL Server Integration Services (SSIS) for efficient data integration.
+                        
+                        My proficiency in data visualization tools such as Superset, PowerBI, and SQL Server Reporting Services (SSRS) has enabled me to present complex data insights in an accessible and impactful manner.
+                        
+                        I possess comprehensive skills in web development, including PHP, JavaScript, CSS3, HTML5, Bootstrap, JQuery, Ajax, and Laravel. Additionally, I have a foundational understanding and development skillset of the ASP.NET core MVC. My database administration capabilities span across several relational database management systems (RDBMS) including MySQL, PostgreSQL, Microsoft SQL Server, and SQLite, which I proficiently design and develop to meet various organizational needs.
+                        
+                        All of my technical skills are validated through certifications from LinkedIn Learning, reflecting my commitment to continuous professional development and staying abreast of industry advancements.
+                        
+                        I am eager to leverage my background and skills to contribute to innovative projects, collaborate with dynamic teams, and drive forward the success of web development and data management initiatives.
+                    </p>
+                    <a id="view-more" href="javascript:void(0);" onclick="toggleContent()">View More</a>
+                    
                         <hr>
                           <div class="row">
                             <div class="col-md-6 col-12">
@@ -359,7 +390,7 @@ a i {
                                 <div class="info-list">
                                     <ul>
                                         <li><span>Degree:</span>Bachelors</li>
-                                        <li><span>Status:</span>In Progree</li>
+                                        <li><span>Status:</span>Completed</li>
                                         <li><span>Expected Graduation Year:</span>2024</li>
                                     </ul>
                                 </div>
@@ -378,7 +409,7 @@ a i {
                     </div>  
                     <div class="detail-col col-md-8">
                          <h2>Education</h2>
-                         <span class="school"><i class="fas fa-school"></i>DMI-St. University</span>
+                         <span class="school"><i class="fas fa-school"></i> DMI-St. University</span>
                          <h5>Bachelor of Science in Computer Science</h4>
                          <span class="date"><span class="icon-calendar"></span>2020 - 2023</span><br>
                          <span>Expected to graduate in 2024 </span>
@@ -443,6 +474,33 @@ a i {
                                 <a href="#"><button class="btn btn-primary"><span>View on Github</span></button></a>
                             </div>
                         </div>
+
+                        <div class="col-md-4 seric-div">
+                            <div class="service-card">
+                                <img src="assets/images/logo3.jpg" alt="" style="width: 100px; height: 90px;">
+                                <h4>SmartCare Pro <span>
+                                    Training Tracker
+                                </span></h4>
+                                <p>Designed to keep track of the SmartCare pro training with visualizations</p>
+                                <a href="#"><button class="btn btn-primary"><span>View on Github</span></button></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 seric-div">
+                            <div class="service-card">
+                                <img src="assets/images/ihm-logo.jpg" alt="" style="width: 100px; height: 90px;">
+                                <h4>Zambia360 Data Access & Sharing Portal</h4>
+                                <p>Propsoed system for easy accessibility of various Dataset Cohorts from the NDW </p>
+                                <a href="#"><button class="btn btn-primary"><span>View on Github</span></button></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 seric-div">
+                            <div class="service-card">
+                                <img src="" alt="" style="width: 100px; height: 90px;">
+                                <h4>MCH Appointmtnet system</h4>
+                                <p>A system for generating automated and periodic appointment reminders to MCH clients</p>
+                                <a href="#"><button class="btn btn-primary"><span>View on Github</span></button></a>
+                            </div>
+                        </div>
                         
                     </div>
                 </div>
@@ -462,17 +520,34 @@ a i {
                     <div class="col-md-4 seric-div">
                         <div class="service-card">
                             <i class="fab fa-html5"></i>
-                            <h4>frontend/Design</h4>
+                            <h4>frontend Design</h4>
                             <p>Bootstrap, HTML, CSS, and JavaScript for responsive, and intuitive User interfaces.</p>
                         </div>
                     </div>                    
                     <div class="col-md-4 seric-div">
                         <div class="service-card">
                             <i class="fab fa-php"></i>
-                            <h4>backend development</h4>
-                            <p>Uses core PHP/MySQL for server-side development, it's safe and secure.</p>
+                            <h4>PHP/Laravel</h4>
+                            <p> For server-side development, it's safe and secure.</p>
                         </div>
                     </div>
+                    <div class="col-md-4 seric-div">
+                        <div class="service-card">
+                            <i class="fas fa-database"></i>
+                            <h4>Data Warehousing</h4>
+                            <p>Designing data warehouses, ETLs & Reporting</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 seric-div">
+                        <div class="service-card">
+                            <i class="fas fa-code"></i>
+                            <h4>ASP.NET Core MVC</h4>
+                            <p>Foundational skill in ASP.NET Core web development</p>
+                        </div>
+                    </div>
+                    
+                    
                     <div class="col-md-4 seric-div">
                         <div class="service-card">
                             <i class="fas fa-network-wired"></i>
@@ -496,12 +571,7 @@ a i {
                     </div>
                     
                     <ul>
-                        <li>
-                            <label for="">UI Design</label>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">50%</div>
-                                </div>
-                        </li>
+                        
                         <li>
                             <label for="">CSS</label>
                                 <div class="progress">
@@ -517,14 +587,38 @@ a i {
                          <li>
                             <label for="">HTML5</label>
                                 <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                                 </div>
                         </li>
                          <li>
-                            <label for="">PHP / MYSQL</label>
-                                <div class="progress">
-                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">65%</div>
-                                </div>
+                            <label for="">PHP</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">MySQL</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">PostgreSQl</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">Microsoft SQL Server</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">ASP.NET Core MVC</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                            </div>
                         </li>
                          
                     </ul>
@@ -596,6 +690,20 @@ a i {
 
       type();
     });
+
+    function toggleContent() {
+    var content = document.getElementById("content");
+    var viewMore = document.getElementById("view-more");
+    
+    if (viewMore.innerHTML === "View More") {
+        content.style.maxHeight = "none";
+        viewMore.innerHTML = "View Less";
+    } else {
+        content.style.maxHeight = "150px"; // Adjust height based on your design
+        viewMore.innerHTML = "View More";
+    }
+}
+
   </script>
     <!-- <script src="assets/js/jquery-3.2.1.min.js"></script> -->
     <script src="assets/js/popper.min.js"></script>
@@ -643,4 +751,5 @@ a i {
 		
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+
 </html>
